@@ -8,7 +8,9 @@
     "type": "git",
     "url": ""
   },
-  "dependencies": {},
+  "dependencies": {
+    "subview": "0.x.x"
+  },
   "devDependencies": {
     "node-lessify": "0.0.x",
     "grunt": "~0.4.2",
@@ -19,8 +21,7 @@
     "grunt-contrib-uglify": "0.3.x",
     "grunt-contrib-qunit": "~0.4.0",
     "qunitjs": "~1.14.0",
-    "sinon": "~1.8.2",
-    "subview": "0.0.x"
+    "sinon": "~1.8.2"
   },
   "license": "MIT",
   "keywords": [],

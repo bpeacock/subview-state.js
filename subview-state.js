@@ -1,11 +1,13 @@
-var State = function($el, defaults) {
-    this.$wrapper = $el;
-    this.data     = {};
-    this.bindings = {};
-    this.load(defaults);
-};
+var subview = require('subview');
 
-State.prototype = {
+module.exports = subview.extension({
+    init: function(config, view) {
+        this.$wrapper = view.$wrapper;
+        this.data     = {};
+        this.bindings = {};
+        this.load(config);
+    },
+
     _stateCssPrefix:        'state-',
 
     /*** Get Set ***/
@@ -86,13 +88,4 @@ State.prototype = {
         
         this.$wrapper[0].className = classes.join(' ');
     }
-};
-
-/*** The Extension Factory ***/
-var extension = function(config) {
-    return new State(this.$wrapper, config);
-};
-
-extension.isSubviewExtension = true;
-
-module.exports = extension;
+});
