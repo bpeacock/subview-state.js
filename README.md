@@ -8,6 +8,8 @@ Usage
 
 Installation: `npm install subview-state`
 
+For a usage example see [this subview.js example](https://github.com/bpeacock/subview.js/blob/master/examples/example.js).
+
 Development
 -----------
 

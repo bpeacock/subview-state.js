@@ -1,6 +1,4 @@
-var subview = require('subview');
-
-module.exports = subview.extension({
+module.exports = window.subview.extension({
     init: function(config, view) {
         this.$wrapper = view.$wrapper;
         this.data     = {};
@@ -8,7 +6,7 @@ module.exports = subview.extension({
         this.load(config);
     },
 
-    _stateCssPrefix:        'state-',
+    _stateCssPrefix: 'state-',
 
     /*** Get Set ***/
     set: function(name, value) {
