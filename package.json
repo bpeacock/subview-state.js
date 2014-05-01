@@ -1,16 +1,14 @@
 {
   "name": "subview-state",
   "description": "A state extension for subview.js",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Brian Peacock",
   "main": "subview-state.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/bpeacock/subview-state.js"
   },
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
     "node-lessify": "0.0.x",
     "grunt": "~0.4.2",
